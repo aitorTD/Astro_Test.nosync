@@ -3,6 +3,8 @@ interface Props {
 	title: string;
 }
 
+import OuterWilds from '../images/bg-2.jpg';
+
 const { title } = Astro.props;
 ---
 
@@ -47,5 +49,9 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+
+	body {
+		background-image: url({OuterWilds.src});
 	}
 </style>
